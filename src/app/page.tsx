@@ -1,8 +1,16 @@
+'use client'
+import { EnqueueJob } from '@/lib/Actions/JobsQueue'
 import React from 'react'
-
 const page = () => {
   return (
-    <div className='bg-red-500 h-screen w-screen'>page</div>
+    <div className=''>
+
+      <button onClick={
+        () => {
+          EnqueueJob("test")
+        }
+      }>Enqueue Job</button>
+    </div>
   )
 }
 
